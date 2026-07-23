@@ -1,0 +1,352 @@
+[
+  {
+    "id": "QA-ACC-01",
+    "category": "Account & Security",
+    "question": "How can I transfer my progression from PlayStation 5 to PC (Steam) via Cross-Save?",
+    "answer": "Log in to your PolyGames account at account.polygames.com. Go to the 'Linked Accounts' tab and authorize both your PlayStation Network and Steam accounts. Select your primary progress and click 'Enable Cross-Save'. Purchased cosmetics and progression will transfer, but platform-specific PolyCoin balances remain tied to their respective platforms.",
+    "tags": ["cross-save", "ps5", "steam", "account-linking"]
+  },
+  {
+    "id": "QA-ACC-02",
+    "category": "Account & Security",
+    "question": "How do I enable Two-Factor Authentication (2FA) on my account?",
+    "answer": "Go to the 'Security' tab at account.polygames.com. Under 'Two-Factor Authentication', select either Google Authenticator or Email Verification. Scan the displayed QR code with your authenticator app and enter the 6-digit security code to finalize setup.",
+    "tags": ["2fa", "security", "authenticator", "account-protection"]
+  },
+  {
+    "id": "QA-ACC-03",
+    "category": "Account & Security",
+    "question": "My account was compromised and my email address was changed, what should I do?",
+    "answer": "If you lost access to your email, send an urgent email to support@polygames.com with the subject 'Compromised Account'. To verify ownership, provide the Order IDs of your last two purchases and the original registration IP address.",
+    "tags": ["account-hacked", "stolen-account", "email-change", "support"]
+  },
+  {
+    "id": "QA-ACC-04",
+    "category": "Account & Security",
+    "question": "I am not receiving the password reset email, how can I fix this?",
+    "answer": "First, check your 'Spam / Junk' folder. Your email provider might be blocking no-reply@polygames.com. If it doesn't arrive within 15 minutes, try making another request using an Incognito window or a different IP connection.",
+    "tags": ["password-reset", "email-issue", "spam", "login"]
+  },
+  {
+    "id": "QA-ACC-05",
+    "category": "Account & Security",
+    "question": "How can I change my in-game Display Name?",
+    "answer": "You can change your display name once every 30 days for free under Account Settings > Profile. Restart the game client after changing it for the update to take effect. Names containing hate speech will be automatically rejected.",
+    "tags": ["display-name", "name-change", "profile", "nickname"]
+  },
+  {
+    "id": "QA-ACC-06",
+    "category": "Account & Security",
+    "question": "How do I link my PolyGames account to Twitch to claim Twitch Drops?",
+    "answer": "Visit account.polygames.com/twitch and log in with your Twitch account. Click 'Authorize', then watch official PolyGames streams. Claim earned drops on your Twitch 'Inventory' page; rewards will appear in your in-game mailbox within 24 hours.",
+    "tags": ["twitch-drops", "rewards", "twitch", "inventory"]
+  },
+  {
+    "id": "QA-ACC-07",
+    "category": "Account & Security",
+    "question": "How can I permanently delete my PolyGames account (GDPR / Privacy Request)?",
+    "answer": "Click 'Permanently Delete Account' at the bottom of the Account Settings > Privacy tab. A 14-day grace period will begin. If you do not log in during this window, all characters, items, and purchase records will be permanently erased.",
+    "tags": ["account-deletion", "gdpr", "privacy", "delete"]
+  },
+  {
+    "id": "QA-ACC-08",
+    "category": "Account & Security",
+    "question": "How do I setup Parental Controls on my child's account?",
+    "answer": "Through the Parental Panel, you can restrict daily playtime, disable voice chat, and set monthly spending caps. If you forget your Parental PIN, you will need to complete identity verification to reset it.",
+    "tags": ["parental-controls", "spending-limit", "pin", "safety"]
+  },
+  {
+    "id": "QA-ACC-09",
+    "category": "Account & Security",
+    "question": "Can I merge two separate PolyGames accounts into one?",
+    "answer": "No. Due to security policies and database integrity constraints, merging two distinct PolyGames accounts is not supported. Items and balances cannot be transferred between accounts.",
+    "tags": ["account-merge", "merge", "transfer", "support"]
+  },
+  {
+    "id": "QA-ACC-10",
+    "category": "Account & Security",
+    "question": "What does the 'Account Reached Session Limit (ERR_SESSION_LIMIT)' error mean?",
+    "answer": "This error occurs when your account is currently logged in on another device. If you haven't left it open elsewhere, use 'Log Out All Devices' at account.polygames.com and change your password immediately.",
+    "tags": ["session-limit", "session-error", "security", "logout"]
+  },
+  {
+    "id": "QA-PAY-01",
+    "category": "Payment & Store",
+    "question": "Can I refund a weapon skin or character outfit I purchased by mistake?",
+    "answer": "Items are eligible for refund within 14 days of purchase provided they have never been equipped or used in a match. Go to Store > Purchase History and click 'Refund Item'. Used items are strictly non-refundable.",
+    "tags": ["refund", "skins", "store", "polycoin"]
+  },
+  {
+    "id": "QA-PAY-02",
+    "category": "Payment & Store",
+    "question": "My credit card was charged but PolyCoins were not credited to my account?",
+    "answer": "Due to banking verification delays, transactions may take up to 15 minutes to reflect. If they do not appear after 15 minutes, restart the game. If the issue persists, submit a ticket with your bank receipt and Order ID.",
+    "tags": ["polycoin", "missing-currency", "payment-issue", "receipt"]
+  },
+  {
+    "id": "QA-PAY-03",
+    "category": "Payment & Store",
+    "question": "I moved to a new country, how can I change my store currency and region?",
+    "answer": "Region changes require that no previous region change occurred within the last 90 days. Submit an official proof of residence or a utility bill showing a local payment card to support@polygames.com.",
+    "tags": ["region-change", "currency", "store", "pricing"]
+  },
+  {
+    "id": "QA-PAY-04",
+    "category": "Payment & Store",
+    "question": "Are Battle Pass tier purchases refundable?",
+    "answer": "No. Tier skips and instant level unlocks are immediately applied to your account progression upon purchase and are strictly non-refundable.",
+    "tags": ["battle-pass", "refund", "tier-skip", "cancellation"]
+  },
+  {
+    "id": "QA-PAY-05",
+    "category": "Payment & Store",
+    "question": "Why am I getting a 'Transaction Canceled' error when paying with Steam Wallet?",
+    "answer": "Ensure the Steam In-Game Overlay is enabled (Shift+Tab). If disabled, the checkout window cannot launch. Also verify that your Steam Wallet balance covers the required total including local taxes.",
+    "tags": ["steam-wallet", "transaction-error", "overlay", "payment"]
+  },
+  {
+    "id": "QA-PAY-06",
+    "category": "Payment & Store",
+    "question": "Where can I download my purchase tax invoices?",
+    "answer": "Log in at account.polygames.com and navigate to the 'Purchase History' tab. Click 'Download PDF Invoice' next to any transaction to download your official e-invoice.",
+    "tags": ["invoice", "receipt", "purchase-history", "pdf"]
+  },
+  {
+    "id": "QA-PAY-07",
+    "category": "Payment & Store",
+    "question": "What are the requirements for sending store gifts to friends?",
+    "answer": "To gift items: 1) 2FA must be active on your account, 2) You must be at least Level 15, and 3) You must be friends with the recipient for at least 48 hours. The daily gifting limit is 5 items.",
+    "tags": ["gifting", "store-gifts", "friend-gifting", "requirements"]
+  },
+  {
+    "id": "QA-PAY-08",
+    "category": "Payment & Store",
+    "question": "Why are PolyCoin prices different on Mobile (iOS/Android) compared to PC?",
+    "answer": "Price discrepancies occur due to Apple App Store and Google Play platform commissions and regional exchange rate adjustments. The most economical pricing is available directly on the PC client.",
+    "tags": ["mobile-payment", "app-store", "google-play", "price-difference"]
+  },
+  {
+    "id": "QA-PAY-09",
+    "category": "Payment & Store",
+    "question": "What happens if I initiate a chargeback with my bank?",
+    "answer": "Initiating an unauthorized chargeback will result in the reversed currency being deducted from your account. If your balance becomes negative, your account will be suspended until the debt is resolved.",
+    "tags": ["chargeback", "ban", "negative-balance", "refund-abuse"]
+  },
+  {
+    "id": "QA-PAY-10",
+    "category": "Payment & Store",
+    "question": "Where can I redeem a promo code or gift card code?",
+    "answer": "Open the in-game Store tab and click 'Redeem Code' in the top right corner. Enter the 16-digit code including hyphens and click 'Confirm'. Rewards will arrive in your mailbox immediately.",
+    "tags": ["promo-code", "redeem-code", "gift-card", "store"]
+  },
+  {
+    "id": "QA-TECH-01",
+    "category": "Technical & Performance",
+    "question": "How do I fix 'Unreal Engine Process Has Crashed: LowLevelFatalError' on startup?",
+    "answer": "This crash is caused by corrupted shaders or DirectX component conflicts. Fixes: 1) Verify game file integrity via Steam/Epic. 2) Delete the `%LOCALAPPDATA%\\PolyGames\\Saved` folder. 3) Perform a clean GPU driver reinstall using DDU.",
+    "tags": ["unreal-engine", "crash", "lowlevelfatalerror", "startup-issue"]
+  },
+  {
+    "id": "QA-TECH-02",
+    "category": "Technical & Performance",
+    "question": "The game stutters on DirectX 12, how can I force DirectX 11 mode?",
+    "answer": "If the game fails to open, right-click PolyGames on Steam > Properties > Launch Options and add `-dx11`. In-game, switch Render API to DirectX 11 under Graphics Settings and restart the client.",
+    "tags": ["directx-11", "directx-12", "dx11", "launch-options"]
+  },
+  {
+    "id": "QA-TECH-03",
+    "category": "Technical & Performance",
+    "question": "I get a black screen with audio playing when launching the game?",
+    "answer": "This indicates an unsupported resolution or refresh rate mismatch. Press Alt+Enter to switch to Windowed mode. If unresolved, delete `GameUserSettings.ini` to reset graphics options to default.",
+    "tags": ["black-screen", "resolution", "alt-enter", "graphics-reset"]
+  },
+  {
+    "id": "QA-TECH-04",
+    "category": "Technical & Performance",
+    "question": "How do I fix sudden FPS drops and micro-stuttering after a patch?",
+    "answer": "Set the NVIDIA Shader Cache Size to '10 GB' in the NVIDIA Control Panel. Additionally, enable 'Game Mode' and 'Hardware-Accelerated GPU Scheduling' (HAGS) in Windows Graphics Settings.",
+    "tags": ["fps-drops", "stuttering", "shader-cache", "nvidia"]
+  },
+  {
+    "id": "QA-TECH-05",
+    "category": "Technical & Performance",
+    "question": "What should I do if I get an 'Out of Video Memory (VRAM Exceeded)' error?",
+    "answer": "Your GPU VRAM capacity has been exceeded. Lower 'Texture Quality' and 'Shadow Quality' to Medium/Low in Graphics Settings. Disable hardware acceleration in background apps like Chrome or Discord.",
+    "tags": ["vram", "video-memory", "graphics-settings", "out-of-memory"]
+  },
+  {
+    "id": "QA-TECH-06",
+    "category": "Technical & Performance",
+    "question": "How do I verify the integrity of my game files?",
+    "answer": "For Steam: Right-click PolyGames in Library > Properties > Installed Files > 'Verify integrity of game files'. For Epic Games: Library > Click 3 dots under PolyGames > Manage > 'Verify'.",
+    "tags": ["verify-files", "repair", "steam", "epic-games"]
+  },
+  {
+    "id": "QA-TECH-07",
+    "category": "Technical & Performance",
+    "question": "Is Ultrawide (21:9 / 32:9) supported, or why are there black bars?",
+    "answer": "Field of View (FOV) is capped at 21:9 during competitive matches to maintain competitive integrity. Black bars (letterboxing) on 32:9 displays are an intentional design decision for fairness.",
+    "tags": ["ultrawide", "21-9", "32-9", "fov", "letterbox"]
+  },
+  {
+    "id": "QA-TECH-08",
+    "category": "Technical & Performance",
+    "question": "Discord screen sharing causes my game to crash or mutes my microphone?",
+    "answer": "Disable 'Hardware Acceleration' in Discord Settings > Advanced. In the in-game audio settings, manually set your Input Device to your specific microphone model instead of 'Default Device'.",
+    "tags": ["discord", "screen-share", "microphone", "audio-crash"]
+  },
+  {
+    "id": "QA-TECH-09",
+    "category": "Technical & Performance",
+    "question": "Why does the game take a long time on the 'Building Shaders' screen on every launch?",
+    "answer": "Updating GPU drivers clears the shader cache, requiring recompilation on launch. This should take 1-2 minutes on an SSD; if you are using an HDD, moving the game to an SSD is strongly recommended.",
+    "tags": ["shaders", "building-shaders", "ssd", "loading-screen"]
+  },
+  {
+    "id": "QA-TECH-10",
+    "category": "Technical & Performance",
+    "question": "My PS5 DualSense or Xbox Controller is not recognized on PC?",
+    "answer": "On Steam, go to Settings > Controller > Enable 'Steam Input for Xbox/PlayStation Controllers'. To utilize DualSense haptic feedback feature, connect the controller directly using a USB Type-C cable.",
+    "tags": ["gamepad", "dualsense", "xbox-controller", "controller-issue"]
+  },
+  {
+    "id": "QA-NET-01",
+    "category": "Network & Server",
+    "question": "How can I fix High Ping and Packet Loss during online matches?",
+    "answer": "Use a wired Cat6 Ethernet cable instead of Wi-Fi. Enable UPnP on your router settings and toggle 'Network Optimization' to ON in the game settings. Ensure no background downloads are running.",
+    "tags": ["ping", "packet-loss", "lag", "ethernet", "connection"]
+  },
+  {
+    "id": "QA-NET-02",
+    "category": "Network & Server",
+    "question": "What causes 'ERR_NETWORK_502: Connection to Host Lost'?",
+    "answer": "This error indicates network packet timeouts between your client and the server. Change your DNS to Google DNS (8.8.8.8 / 8.8.4.4) or Cloudflare (1.1.1.1), then execute `ipconfig /flushdns` in CMD.",
+    "tags": ["err_network_502", "dns", "flushdns", "connection-lost"]
+  },
+  {
+    "id": "QA-NET-03",
+    "category": "Network & Server",
+    "question": "Where can I check server maintenance schedules and status?",
+    "answer": "Live server status is updated 24/7 at status.polygames.com and announced via our official X (Twitter) account @PolyGamesStatus.",
+    "tags": ["server-status", "maintenance", "downtime", "outage"]
+  },
+  {
+    "id": "QA-NET-04",
+    "category": "Network & Server",
+    "question": "My friends do not show up in the lobby and party invites fail?",
+    "answer": "Ensure all party members have updated to the latest game patch. Change Party Privacy from 'Invite Only' to 'Public', send the invite again, and verify cross-play settings are enabled.",
+    "tags": ["lobby-issue", "party-invite", "friends-list", "cross-play"]
+  },
+  {
+    "id": "QA-NET-05",
+    "category": "Network & Server",
+    "question": "My NAT Type shows as 'Strict', how do I change it to 'Open'?",
+    "answer": "Forward these ports in your router panel: UDP: 3074, 27015-27030; TCP: 80, 443. If you are behind a CGNAT, contact your Internet Service Provider to request a static public IP address.",
+    "tags": ["nat-type", "strict-nat", "port-forwarding", "cgnat"]
+  },
+  {
+    "id": "QA-NET-06",
+    "category": "Network & Server",
+    "question": "Can I manually select my matchmaking server region?",
+    "answer": "Yes, navigate to Settings > Network and manually choose your preferred Matchmaking Region (EU-Central, NA-East, ASIA, etc.). Regions with ping higher than 150ms may experience longer queue times.",
+    "tags": ["server-region", "matchmaking", "ping", "server-selection"]
+  },
+  {
+    "id": "QA-NET-07",
+    "category": "Network & Server",
+    "question": "Is using a gaming VPN (ExitLag, Mudfish) bannable?",
+    "answer": "Using routing VPNs purely to stabilize connection ping is allowed. However, using VPNs to spoof store regions, bypass IP bans, or exploit regional pricing will lead to a permanent account suspension.",
+    "tags": ["vpn", "exitlag", "ban-risk", "regional-spoofing"]
+  },
+  {
+    "id": "QA-GAME-01",
+    "category": "In-Game Mechanics",
+    "question": "Does Ranked Mode have rank decay (MMR / LP Decay)?",
+    "answer": "Rank Decay is active for Diamond rank and above. If you do not play a ranked match for 7 consecutive days, you will lose 50 LP daily. Ranks below Platinum do not suffer from inactivity decay.",
+    "tags": ["ranked", "mmr-decay", "rank-loss", "lp-decay"]
+  },
+  {
+    "id": "QA-GAME-02",
+    "category": "In-Game Mechanics",
+    "question": "Do Battle Pass levels and rewards reset when a new season starts?",
+    "answer": "Yes, Battle Pass levels reset every season. However, all unlocked cosmetic skins, titles, and PolyCoins earned from completed tiers remain permanently on your account.",
+    "tags": ["battle-pass", "season-reset", "cosmetics", "progression"]
+  },
+  {
+    "id": "QA-GAME-03",
+    "category": "In-Game Mechanics",
+    "question": "What is the maximum rank discrepancy allowed when queuing with friends in Ranked?",
+    "answer": "Party members cannot exceed a 2-Tier rank difference (e.g., Gold queuing with Diamond). Master rank and above players can only queue Solo or Duo.",
+    "tags": ["ranked-party", "rank-difference", "party-limit", "matchmaking"]
+  },
+  {
+    "id": "QA-GAME-04",
+    "category": "In-Game Mechanics",
+    "question": "If I purchase the Battle Pass mid-season, do I retroactively unlock past tiers?",
+    "answer": "Yes. Free tier progression is tracked automatically. Purchasing the Premium Battle Pass at any point in the season instantly unlocks all premium rewards up to your current tier.",
+    "tags": ["battle-pass", "premium-rewards", "mid-season", "retroactive"]
+  },
+  {
+    "id": "QA-GAME-05",
+    "category": "In-Game Mechanics",
+    "question": "Where are my crafting and weapon upgrade materials stored?",
+    "answer": "Crafting materials do not consume inventory inventory space. They are automatically deposited into your universal 'Crafting Bank'. View your materials via the Workshop tab in the main menu.",
+    "tags": ["crafting", "workshop", "materials", "inventory-space"]
+  },
+  {
+    "id": "QA-GAME-06",
+    "category": "In-Game Mechanics",
+    "question": "What are the penalties for leaving matches early or going AFK?",
+    "answer": "Leaving a Ranked match early results in a 15-minute queue lock and a 30 LP penalty. Repeated offenses increase queue bans up to 24 hours and temporary lockouts from competitive modes.",
+    "tags": ["afk", "leaver-penalty", "early-leave", "queue-ban"]
+  },
+  {
+    "id": "QA-GAME-07",
+    "category": "In-Game Mechanics",
+    "question": "What benefits are included with the 'PolyPass' monthly subscription?",
+    "answer": "PolyPass subscribers receive: 1) Active Season Premium Battle Pass, 2) 1,000 PolyCoins monthly, 3) An exclusive subscriber cosmetic, and a permanent +15% XP Boost.",
+    "tags": ["polypass", "subscription", "monthly-pass", "xp-boost"]
+  },
+  {
+    "id": "QA-GAME-08",
+    "category": "In-Game Mechanics",
+    "question": "How do I create a Custom Match lobby for tournaments?",
+    "answer": "Go to Play > Custom Match > Create Lobby. Set a password and share it with participants. Tournament rules and custom map modifiers can be toggled in the right-hand settings panel.",
+    "tags": ["custom-match", "tournament", "lobby-creation", "password"]
+  },
+  {
+    "id": "QA-SAN-01",
+    "category": "Penalties & Anti-Cheat",
+    "question": "What is a Hardware Ban (HWID Ban) and how long does it last?",
+    "answer": "An HWID Ban flags and bans the unique hardware IDs (motherboard, GPU, drive serials) of a cheater's PC. First-time HWID bans last 180 days. Subsequent cheat infractions result in permanent hardware bans.",
+    "tags": ["hwid-ban", "hardware-ban", "anti-cheat", "ban-duration"]
+  },
+  {
+    "id": "QA-SAN-02",
+    "category": "Penalties & Anti-Cheat",
+    "question": "How long does a Chat Restriction (Mute) penalty last?",
+    "answer": "Text and voice toxicity penalties follow a tier structure: 1st offense is a 3-day mute, 2nd offense is 7 days, and 3rd offense is a 30-day mute. Continued toxicity leads to full account suspension.",
+    "tags": ["mute", "chat-restriction", "toxicity", "penalty"]
+  },
+  {
+    "id": "QA-SAN-03",
+    "category": "Penalties & Anti-Cheat",
+    "question": "Where can I submit a ban appeal if I believe I was banned unfairly?",
+    "answer": "Ban appeals are handled exclusively through the 'Ban Appeal' form at support.polygames.com. Appeals submitted through Discord, social media, or email will not be reviewed.",
+    "tags": ["ban-appeal", "unban", "support-ticket", "appeal-form"]
+  },
+  {
+    "id": "QA-SAN-04",
+    "category": "Penalties & Anti-Cheat",
+    "question": "Are mouse macros (Razer Synapse / Logitech G HUB) allowed?",
+    "answer": "Macros that automate firing rates or suppress recoil (No-Recoil scripts) are detected as cheats and trigger permanent bans. Simple single-key remaps are permitted.",
+    "tags": ["macros", "razer-synapse", "logitech-g-hub", "no-recoil"]
+  },
+  {
+    "id": "QA-SAN-05",
+    "category": "Penalties & Anti-Cheat",
+    "question": "Will I get notified if a player I reported gets banned?",
+    "answer": "Yes. When a reported player is penalized by our Anti-Cheat team, an in-game pop-up notification will confirm: 'Report Feedback: A player you reported has been penalized.'",
+    "tags": ["report-feedback", "cheater-banned", "report-system", "anti-cheat"]
+  }
+]
