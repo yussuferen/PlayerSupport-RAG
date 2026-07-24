@@ -81,11 +81,6 @@ def ask_rag(query, collection,top_k=3):
 
     context = "\n\n---\n\n".join(results["documents"][0])
 
-    # 🐛 DEBUG:
-    print("\n--- [DEBUG] RETRIEVED CONTEXT FROM CHROMADB ---")
-    print(context)
-    print("------------------------------------------------\n")
-
     prompt = f"""You are an AI support assistant for PolyGames studio.
 Use the provided Context information below to answer the user's question clearly and politely.
 If the answer cannot be found in the context, do NOT hallucinate or invent information. Simply reply: "This information is not available in our support center, please contact live support."
