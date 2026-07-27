@@ -1,2 +1,4 @@
 chromadb
 ollama
+rank-bm25
+sentence_transformers

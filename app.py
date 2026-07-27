@@ -2,10 +2,14 @@ import os
 import json
 import chromadb
 import ollama
+from rank_bm25 import BM25Okapi
+from sentence_transformers import CrossEncoder
 
 DB_PATH = "./chroma_db"
 COLLECTION_NAME = "polygames_qa_support"
 JSON_PATH = "polygames_qa.json"
+
+RERANKER_MODEL = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
 
 # ==========================================
 # VECTOR DB
@@ -13,7 +17,6 @@ JSON_PATH = "polygames_qa.json"
 def load_vectordb(client):
     print("Loading existing ChromaDB database from disk...")
     return client.get_collection(name=COLLECTION_NAME)
-
 
 def create_vectordb(client):
     print("Initial setup: Processing JSON dataset and generating embeddings...")
@@ -59,27 +62,61 @@ def get_vector_db():
     if COLLECTION_NAME in existing_collections:
         return load_vectordb(chroma_client)
     return create_vectordb(chroma_client)
-
 # ==========================================
-# RETRIEVAL & GENERATION
+# SEARCH
 # ==========================================
-def ask_rag(query, collection,top_k=3):
-    """Retrieves context from ChromaDB and generates an answer using Llama 3.2."""
-    print(f"\nSearching context for query: '{query}'")
-
-    # Embed the user query
+def vector_search(query, collection, top_k):
     query_embedding = ollama.embeddings(
         model="nomic-embed-text",
         prompt=query
     )["embedding"]
 
-    # Retrieve top 3 most relevant QA pairs
     results = collection.query(
         query_embeddings=[query_embedding],
         n_results=top_k
     )
+    return results["documents"][0]
 
-    context = "\n\n---\n\n".join(results["documents"][0])
+def keyword_search(query, bm25, documents, top_k):
+    tokenized_query = query.lower().split()
+    return bm25.get_top_n(tokenized_query, documents, n=top_k)
+
+def combine_results(v_docs, k_docs):
+    return list(dict.fromkeys(v_docs + k_docs))
+
+# ==========================================
+# BM25
+# ==========================================
+def build_bm25_index(collection):
+    all_data = collection.get(include=["documents"])
+    all_docs = all_data["documents"]
+
+    tokenized_corpus = [doc.lower().split() for doc in all_docs]
+    bm25 = BM25Okapi(tokenized_corpus)
+    return bm25, all_docs
+# ==========================================
+# RERANKER
+# ==========================================
+def rerank_docs(query, candidate_docs, final_top_k=3):
+    pairs = [[query, doc] for doc in candidate_docs]
+    scores = RERANKER_MODEL.predict(pairs)
+    scored_docs = sorted(zip(candidate_docs, scores), key=lambda x: x[1], reverse=True)
+    return [doc for doc, score in scored_docs[:final_top_k]]
+
+# ==========================================
+# RETRIEVAL & GENERATION
+# ==========================================
+def ask_rag(query, collection,bm25,documents,top_k=3):
+    """Retrieves context from ChromaDB and generates an answer using Llama 3.2."""
+    print(f"\nSearching context for query: '{query}'")
+
+    v_results = vector_search(query,collection,top_k)
+    k_results = keyword_search(query,bm25,documents,top_k)
+
+    cand_docs = combine_results(v_results,k_results)
+    final_docs = rerank_docs(query,cand_docs,top_k);
+
+    context = "\n\n---\n\n".join(final_docs)
 
     prompt = f"""You are an AI support assistant for PolyGames studio.
 Use the provided Context information below to answer the user's question clearly and politely.
@@ -109,7 +146,8 @@ if __name__ == "__main__":
         exit()
 
     collection = get_vector_db()
-
+    bm25, documents = build_bm25_index(collection)
+    
     print("\nPolyGames Player Support Assistant Ready! (Type 'q' or 'exit' to quit)\n")
 
     while True:
@@ -119,7 +157,7 @@ if __name__ == "__main__":
             break
 
         if user_query.strip():
-            answer = ask_rag(user_query, collection)
+            answer = ask_rag(user_query, collection,bm25,documents)
             print("\nResponse:")
             print(answer)
             print("=" * 60)
