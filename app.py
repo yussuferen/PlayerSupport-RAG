@@ -118,20 +118,23 @@ def ask_rag(query, collection,bm25,documents,top_k=3):
 
     context = "\n\n---\n\n".join(final_docs)
 
-    prompt = f"""You are an AI support assistant for PolyGames studio.
-Use the provided Context information below to answer the user's question clearly and politely.
-If the answer cannot be found in the context, do NOT hallucinate or invent information. Simply reply: "This information is not available in our support center, please contact live support."
+    system_instruction = (
+        "You are an AI support assistant for PolyGames studio.\n"
+        "Use the provided Context information below to answer the user's question clearly and politely.\n"
+        "If the answer cannot be found in the context, do NOT hallucinate or invent information. "
+        'Simply reply: "This information is not available in our support center, please contact live support."'
+    )
 
-Context:
-{context}
-
-Question: {query}
-
-Answer:"""
+    user_content = f"""
+    Context:
+    {context}
+    
+    Question: 
+    {query}"""
 
     response = ollama.chat(
         model="llama3.2",
-        messages=[{"role": "user", "content": prompt}]
+        messages=[{"role":"system","content":system_instruction},{"role": "user", "content": user_content}]
     )
 
     return response["message"]["content"]
